@@ -3,6 +3,16 @@ import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
 
+class StringCheckerImplement implements StringChecker {
+  String compare;
+  public StringCheckerImplement(String a){
+    compare = a;
+  }
+  public boolean checkString(String s) {
+    return (s.contains(compare)) ? true : false;
+  }
+}
+
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which
