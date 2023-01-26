@@ -15,6 +15,6 @@ public class ListTests {
         check1.add("gone");
         StringChecker sc = new StringCheckerImplement("o");
 
-        assertArrayEquals(input1.toArray(), ListExamples.filter(input1, sc).toArray());
+        assertArrayEquals(check1.toArray(), ListExamples.filter(input1, sc).toArray());
     }
 }
